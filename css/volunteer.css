@@ -4,6 +4,7 @@
     /* Цвета фона */
     --bg-color-green: #9DB33E;
     --bg-color-white: #fff;
+    --bg-color-black: #282828;
 
     /* Цвета текста */
     --text-color-black: #141414;
@@ -45,6 +46,11 @@ body{
 
 .menu-link{
     color: var(--text-color-white);
+    transition: all 0.5s ease;
+}
+
+.menu-link:hover {
+    color: #b8b8b8;
 }
 
 .logo {
@@ -136,4 +142,17 @@ body{
 
 .bonus-btn{
     margin: 60px 0 40px;
+}
+
+/* Стили для подвала */
+
+.footer{
+    background-color: var(--bg-color-black);
+}
+
+.footer-content{
+    display: flex;
+    padding: 25px 0;
+    justify-content: space-between;
+    align-items: center;
 }

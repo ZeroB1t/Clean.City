@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    /* Цвета фона */
+    --bg-color-green: #9DB33E;
+    --bg-color-white: #fff;
+
+    /* Цвета текста */
+    --text-color-black: #141414;
+    --text-color-white: #fff;
+
+    /* Техт для кнопки */
+    --btn-static-color: #D52027;
+    --btn-hover-color: #b3181e;
+}
+
+/* Основные стили */
+
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+.container{
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.header{
+    background-color: var(--bg-color-green);
+}
+
+/* Стили для меню */
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.menu-item {
+    margin-right: 35px;
+}
+
+.menu-link{
+    color: var(--text-color-white);
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/* Стили для контента в header */
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 60px;
+}
+.header-title {
+}
+.header-name {
+    color: var(--text-color-white);
+    font-size: 70px;
+    font-weight: 600;
+    max-width: 377px;
+    margin-right: 50px;
+}
+.header-desc {
+    color: var(--text-color-white);
+    font-size: 20px;
+    margin-top: 10px;
+}
+.header-btn {
+    color: var(--text-color-white);
+    background-color: var(--btn-static-color);
+    padding: 25px 54px;
+    margin-top: 45px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.header-btn:hover{
+    background-color: var(--btn-hover-color);
+}
+
+.header-img {
+    max-width: 492.003px;
+    max-height: 390px;
+}

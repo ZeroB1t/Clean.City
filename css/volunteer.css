@@ -116,7 +116,7 @@ body{
 }
 .grid-wrap {
     display: grid;
-    grid-template-columns: repeat(4, 280px);
+    grid-template-columns: repeat(4,280px);
     gap: 15px;
 }
 .grid-item {

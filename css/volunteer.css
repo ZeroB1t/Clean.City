@@ -78,7 +78,7 @@ body{
 .header-desc {
     color: var(--text-color-white);
     font-size: 20px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .btn-reg {
     color: var(--text-color-white);

@@ -101,15 +101,19 @@ body{
 }
 
 /* Стили для about */
+.about {
+    background-color: white;
+}
 
 .about-content {
     max-width: 1050px;
-    margin: 40px auto;
+    padding: 40px auto;
 }
 .about-name {
     font-size: 40px;
     font-weight: 600;
     text-align: center;
+    padding-top: 40px;
 }
 .title {
     display: flex;
@@ -145,6 +149,7 @@ body{
 
 .work {
     max-width: 100%;
+    background-color: white;
 }
 
 .work__text {

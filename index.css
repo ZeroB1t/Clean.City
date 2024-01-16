@@ -81,6 +81,7 @@ body{
     margin-top: 20px;
 }
 .btn-reg {
+    display: block;
     color: var(--text-color-white);
     background-color: var(--btn-static-color);
     padding: 25px 60px;

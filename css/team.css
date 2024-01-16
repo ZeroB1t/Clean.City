@@ -232,7 +232,7 @@
 .btn-up_hide {
   display: none;
 }
-
+/*  */
 .btn-up_hiding {
   opacity: 0;
   transform: translateY(100px);

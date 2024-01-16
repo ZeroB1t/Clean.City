@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="css/media-volunteer.css">
     <link rel="icon" href="img/logo.svg">
 </head>
+
 <body>
     <header class="header" id="header">
         <div class="container">
@@ -61,6 +63,9 @@
             </div>
         </div>
     </section>
+    <div class="btn-up btn-up_hide">
+        up
+    </div>
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -78,5 +83,94 @@
             </div>
         </div>
     </footer>
+    <script>
+        const btnUp = {
+          el: document.querySelector('.btn-up'),
+          scrolling: false,
+          show() {
+            if (this.el.classList.contains('btn-up_hide') && !this.el.classList.contains('btn-up_hiding')) {
+              this.el.classList.remove('btn-up_hide');
+              this.el.classList.add('btn-up_hiding');
+              window.setTimeout(() => {
+                this.el.classList.remove('btn-up_hiding');
+              }, 300);
+            }
+          },
+          hide() {
+            if (!this.el.classList.contains('btn-up_hide') && !this.el.classList.contains('btn-up_hiding')) {
+              this.el.classList.add('btn-up_hiding');
+              window.setTimeout(() => {
+                this.el.classList.add('btn-up_hide');
+                this.el.classList.remove('btn-up_hiding');
+              }, 300);
+            }
+          },
+          addEventListener() {
+            // при прокрутке окна (window)
+            window.addEventListener('scroll', () => {
+              const scrollY = window.scrollY || document.documentElement.scrollTop;
+              if (this.scrolling && scrollY > 0) {
+                return;
+              }
+              this.scrolling = false;
+              // если пользователь прокрутил страницу более чем на 200px
+              if (scrollY > 400) {
+                // сделаем кнопку .btn-up видимой
+                this.show();
+              } else {
+                // иначе скроем кнопку .btn-up
+                this.hide();
+              }
+            });
+            // при нажатии на кнопку .btn-up
+            document.querySelector('.btn-up').onclick = () => {
+              this.scrolling = true;
+              this.hide();
+              // переместиться в верхнюю часть страницы
+              window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: 'smooth'
+              });
+            }
+    
+            const wrapper = document.querySelector('.cards');
+    
+            wrapper.addEventListener('click', (event) => {
+              if (event.target.classList[0] == 'card__add') {
+                document.querySelector('body').classList.toggle('form');
+              }
+    
+            })
+    
+            document.getElementById('formBooking__logo').onclick = (e) => {
+              e.preventDefault;
+              document.querySelector('body').classList.remove('form');
+              return false;
+    
+            }
+    
+            document.querySelector('.thumbnails').onclick = () => {
+              let element = document.querySelector('.senoeg-usingekin');
+              var bodyRect = document.body.getBoundingClientRect(),
+                elemRect = element.getBoundingClientRect()
+              offset = elemRect.top - bodyRect.top;
+    
+    
+              setTimeout(function () {
+                window.scrollTo({
+                  top: offset - 150,
+                  left: 0,
+                  behavior: 'smooth'
+                });
+              }, 50);
+    
+            }
+          }
+        }
+    
+        btnUp.addEventListener();
+      </script>
 </body>
+
 </html>

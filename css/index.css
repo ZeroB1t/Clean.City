@@ -81,6 +81,7 @@ body{
     margin-top: 20px;
 }
 .btn-reg {
+    display: block;
     color: var(--text-color-white);
     background-color: var(--btn-static-color);
     padding: 25px 60px;
@@ -172,7 +173,7 @@ body{
     margin: 40px;
     max-width: 165px;
     background-color: #F3F8FB;;
-    padding: 50px 30px;
+    padding: 50px 2px 50px;
     border-radius: 100%;
     text-align: center;
     text-decoration: none;
@@ -188,3 +189,87 @@ body{
     background-color: #69C87C;
 }
 
+.btn-up {
+      position: fixed;
+      background-color: #f57c00;
+      left: 20px;
+      bottom: 30px;
+      border-radius: 25px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.15s ease-in-out, transform 0.3s ease-in-out;
+      color: #fff;
+      width: 50px;
+      height: 50px;
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .btn-up_hide {
+      display: none;
+    }
+
+    .btn-up_hiding {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+
+    .btn-up-icon {
+      width: 40px;
+      height: 40px;
+      fill: currentcolor;
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      .btn-up:hover {
+        background-color: #ef6c00;
+      }
+    }
+
+ .form-horizontal {
+  text-align: center;
+  max-width: 400px;
+  font-family: 'Lato';
+  font-weight: 400;
+  margin: 100px auto;
+  margin-left: 555px;
+}
+
+.form-control, 
+textarea {
+  max-width: 400px;
+  letter-spacing: 1px;
+}
+
+.send-button {
+  margin-top: 15px;
+  height: 34px;
+  width: 400px;
+  overflow: hidden;
+  transition: all .2s ease-in-out;
+}
+
+.alt-send-button {
+  width: 400px;
+  height: 34px;
+  transition: all .2s ease-in-out;
+}
+
+.send-text {
+  display: block;
+  margin-top: 10px;
+  font: 700 12px 'Lato', sans-serif;
+  letter-spacing: 2px;
+}
+
+.alt-send-button:hover {
+  transform: translate3d(0px, -29px, 0px);
+}
+
+svg{
+    margin-top: 20px;
+    margin-left: 650px;
+    width: 200px;
+}

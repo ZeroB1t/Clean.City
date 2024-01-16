@@ -1,275 +1,277 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-:root{
-    /* Цвета фона */
-    --bg-color-green: #9DB33E;
-    --bg-color-white: #fff;
-    --bg-color-black: #282828;
+:root {
+  /* Цвета фона */
+  --bg-color-green: #9db33e;
+  --bg-color-white: #fff;
+  --bg-color-black: #282828;
 
-    /* Цвета текста */
-    --text-color-black: #141414;
-    --text-color-white-black: #444;
-    --text-color-white: #fff;
+  /* Цвета текста */
+  --text-color-black: #141414;
+  --text-color-white-black: #444;
+  --text-color-white: #fff;
 
-    /* Техт для кнопки */
-    --btn-static-color: #D52027;
-    --btn-hover-color: #b3181e;
+  /* Техт для кнопки */
+  --btn-static-color: #d52027;
+  --btn-hover-color: #b3181e;
 }
 
 /* Основные стили */
 
-body{
-    font-family: "Montserrat", sans-serif;
+body {
+  font-family: "Montserrat", sans-serif;
 }
 
-.container{
-    max-width: 1160px;
-    margin: 0 auto;
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
 }
 
-.header{
-    background-color: var(--bg-color-green);
+.header {
+  background-color: var(--bg-color-green);
 }
 
 /* Стили для меню */
 
 .menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
 }
 
 .menu-item {
-    margin-right: 35px;
+  margin-right: 35px;
 }
 
-.menu-link{
-    color: var(--text-color-white);
-    transition: all 0.5s ease;
+.menu-link {
+  color: var(--text-color-white);
+  transition: all 0.5s ease;
 }
 
 .menu-link:hover {
-    color: #b8b8b8;
+  color: #b8b8b8;
 }
 
 .logo {
-    font-size: 30px;
-    font-weight: 700;
+  font-size: 30px;
+  font-weight: 700;
 }
 
 /* Стили для контента в header */
 
 .header-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 65px;
 }
 .header-title {
 }
 .header-name {
-    color: var(--text-color-white);
-    font-size: 70px;
-    font-weight: 600;
-    max-width: 377px;
-    margin-right: 50px;
+  color: var(--text-color-white);
+  font-size: 70px;
+  font-weight: 600;
+  max-width: 377px;
+  margin-right: 50px;
 }
 .header-desc {
-    color: var(--text-color-white);
-    font-size: 20px;
-    margin-top: 20px;
+  color: var(--text-color-white);
+  font-size: 20px;
+  margin-top: 20px;
 }
 .btn-reg {
-    display: block;
-    color: var(--text-color-white);
-    background-color: var(--btn-static-color);
-    padding: 25px 60px;
-    margin-top: 45px;
-    border-radius: 10px;
-    font-size: 18px;
-    border: none;
-    transition: all 0.3s ease;
+  display: block;
+  color: var(--text-color-white);
+  background-color: var(--btn-static-color);
+  padding: 25px 60px;
+  margin-top: 45px;
+  border-radius: 10px;
+  font-size: 18px;
+  border: none;
+  transition: all 0.3s ease;
 }
 
-.btn-reg:hover{
-    background-color: var(--btn-hover-color);
+.btn-reg:hover {
+  background-color: var(--btn-hover-color);
 }
 
 .header-img {
-    max-width: 492.003px;
-    max-height: 390px;
+  max-width: 492.003px;
+  max-height: 390px;
 }
 
 /* Стили для about */
 .about {
-    background-color: white;
+  background-color: white;
 }
 
 .about-content {
-    max-width: 1050px;
-    padding: 40px auto;
+  max-width: 1050px;
+  padding: 40px auto;
 }
 .about-name {
-    font-size: 40px;
-    font-weight: 600;
-    text-align: center;
-    padding-top: 40px;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 40px;
 }
 .title {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .desc {
-    max-width: 600px;
-    font-size: 20px;
-    font-weight: 400;
+  max-width: 600px;
+  font-size: 20px;
+  font-weight: 400;
 }
 
-.bold-desc{
-    font-weight: bold;
+.bold-desc {
+  font-weight: bold;
 }
 .img-about {
-    max-width: 366px;
+  max-width: 366px;
 }
-
 
 /* стили для подвала */
 
-.footer{
-    background-color: var(--bg-color-black);
+.footer {
+  background-color: var(--bg-color-black);
 }
 
-.footer-content{
-    display: flex;
-    padding: 25px 0;
-    justify-content: space-between;
-    align-items: center;
+.footer-content {
+  display: flex;
+  padding: 25px 0;
+  justify-content: space-between;
+  align-items: center;
 }
-
 
 .work {
-    max-width: 100%;
-    background-color: white;
+  max-width: 100%;
+  background-color: white;
 }
 
 .work__text {
-    margin-left: 40%;
-    color: #303433;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 30px;
-    text-transform: uppercase;
+  margin-left: 40%;
+  color: #303433;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
 }
 
 .work__stages {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .work__stages--stage {
-    margin: 40px;
-    max-width: 165px;
-    background-color: #F3F8FB;;
-    padding: 50px 2px 50px;
-    border-radius: 100%;
-    text-align: center;
-    text-decoration: none;
-    color: #000;
-    text-align: center;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
+  margin: 40px;
+  max-width: 165px;
+  background-color: #f3f8fb;
+  padding: 50px 2px 50px;
+  border-radius: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
 }
 
 .work__stages--stage:hover {
-    background-color: #69C87C;
+  background-color: #69c87c;
 }
 
 .btn-up {
-      position: fixed;
-      background-color: #f57c00;
-      left: 20px;
-      bottom: 30px;
-      border-radius: 25px;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: opacity 0.15s ease-in-out, transform 0.3s ease-in-out;
-      color: #fff;
-      width: 50px;
-      height: 50px;
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .btn-up_hide {
-      display: none;
-    }
-
-    .btn-up_hiding {
-      opacity: 0;
-      transform: translateY(100px);
-    }
-
-    .btn-up-icon {
-      width: 40px;
-      height: 40px;
-      fill: currentcolor;
-    }
-
-    @media (hover: hover) and (pointer: fine) {
-      .btn-up:hover {
-        background-color: #ef6c00;
-      }
-    }
-
- .form-horizontal {
-  text-align: center;
-  max-width: 400px;
-  font-family: 'Lato';
-  font-weight: 400;
-  margin: 100px auto;
-  margin-left: 555px;
+  position: fixed;
+  background-color: #f57c00;
+  left: 20px;
+  bottom: 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.15s ease-in-out, transform 0.3s ease-in-out;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  opacity: 1;
+  transform: translateY(0);
 }
 
-.form-control, 
-textarea {
+.btn-up_hide {
+  display: none;
+}
+
+.btn-up_hiding {
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+.btn-up-icon {
+  width: 40px;
+  height: 40px;
+  fill: currentcolor;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btn-up:hover {
+    background-color: #ef6c00;
+  }
+}
+
+.form-horizontal {
   max-width: 400px;
-  letter-spacing: 1px;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 50px auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
 }
 
 .send-button {
-  margin-top: 15px;
-  height: 34px;
-  width: 400px;
-  overflow: hidden;
-  transition: all .2s ease-in-out;
+  background-color: var(--btn-static-color); /* Adjust button color as needed */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.alt-send-button {
-  width: 400px;
-  height: 34px;
-  transition: all .2s ease-in-out;
-}
-
-.send-text {
-  display: block;
-  margin-top: 10px;
-  font: 700 12px 'Lato', sans-serif;
-  letter-spacing: 2px;
+.send-button:hover {
+  background-color: var(--btn-hover-color);
 }
 
 .alt-send-button:hover {
   transform: translate3d(0px, -29px, 0px);
 }
 
-svg{
-    margin-top: 20px;
-    margin-left: 650px;
-    width: 200px;
+svg {
+  margin-top: 20px;
+  margin-left: 650px;
+  width: 200px;
 }

@@ -10,64 +10,63 @@
 </head>
 <body>
    <header class="header" id="header">
-        <div class="container">
-            <nav class="navigation">
-                <ul class="menu">
-                    <li class="menu-item"><a class="menu-link" href="#header">Главная</a></li>
-                    <li class="menu-item"><a class="menu-link" href="#about">О нас</a></li>
-                    <li class="menu-item logo"><a class="menu-link" href="#header">CLEAN.CITY</a></li>
-                    <li class="menu-item"><a class="menu-link" href="volunteer.html">Волонтёрам</a></li>
-                    <li class="menu-item"><a class="menu-link" href="team.html">Команда</a></li>
-                </ul>
-            </nav>
-          </header>
-          <svg version="1.1" id="L2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-  viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-<circle fill="none" stroke="#fff" stroke-width="4" stroke-miterlimit="10" cx="50" cy="50" r="48"/>
-<line fill="none" stroke-linecap="round" stroke="#fff" stroke-width="4" stroke-miterlimit="10" x1="50" y1="50" x2="85" y2="50.5">
-  <animateTransform 
-       attributeName="transform" 
-       dur="2s"
-       type="rotate"
-       from="0 50 50"
-       to="360 50 50"
-       repeatCount="indefinite" />
-</line>
-<line fill="none" stroke-linecap="round" stroke="#fff" stroke-width="4" stroke-miterlimit="10" x1="50" y1="50" x2="49.5" y2="74">
-  <animateTransform 
-       attributeName="transform" 
-       dur="15s"
-       type="rotate"
-       from="0 50 50"
-       to="360 50 50"
-       repeatCount="indefinite" />
-</line>
-</svg>
-
-<form id="contact-form" class="form-horizontal" role="form">
-       
-      <div class="form-group">
-        <div class="col-sm-12">
-          <input type="text" class="form-control" id="name" placeholder="ФИО" name="name" value="" required>
+      <div class="container">
+          <nav class="navigation">
+              <ul class="menu">
+                  <li class="menu-item"><a class="menu-link" href="index.html">Главная</a></li>
+                  <li class="menu-item"><a class="menu-link" href="index.html">О нас</a></li>
+                  <li class="menu-item logo"><a class="menu-link" href="#header">CLEAN.CITY</a></li>
+                  <li class="menu-item"><a class="menu-link" href="volunteer.html">Волонтёрам</a></li>
+                  <li class="menu-item"><a class="menu-link" href="team.html">Команда</a></li>
+              </ul>
+          </nav>
         </div>
-      </div>
+   </header>
+        <div class="wrap">
+          <!-- <div class="clock">
+                      <svg version="1.1" id="L2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+            <circle fill="none" stroke="#fff" stroke-width="4" stroke-miterlimit="10" cx="50" cy="50" r="48"/>
+            <line fill="none" stroke-linecap="round" stroke="#fff" stroke-width="4" stroke-miterlimit="10" x1="50" y1="50" x2="85" y2="50.5">
+              <animateTransform 
+                  attributeName="transform" 
+                  dur="2s"
+                  type="rotate"
+                  from="0 50 50"
+                  to="360 50 50"
+                  repeatCount="indefinite" />
+            </line>
+            <line fill="none" stroke-linecap="round" stroke="#fff" stroke-width="4" stroke-miterlimit="10" x1="50" y1="50" x2="49.5" y2="74">
+              <animateTransform 
+                  attributeName="transform" 
+                  dur="15s"
+                  type="rotate"
+                  from="0 50 50"
+                  to="360 50 50"
+                  repeatCount="indefinite" />
+            </line>
+            </svg>
+          </div> -->
 
-      <div class="form-group">
-        <div class="col-sm-12">
-          <input type="email" class="form-control" id="email" placeholder="Email" name="email" value="" required>
+          <form id="contact-form" class="form-horizontal" role="form">
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <input type="text" class="form-control" id="name" placeholder="ФИО" name="name" value="" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <input type="email" class="form-control" id="email" placeholder="Email" name="email" value="" required>
+                </div>
+              </div>
+              <textarea class="form-control" rows="10" placeholder="Описание проблемы" name="message" required></textarea>
+              <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                <div class="alt-send-button">
+                  <i class="fa fa-paper-plane"></i><span class="send-text">ОТПРАВИТЬ</span>
+                </div>
+              </button>
+          </form>
         </div>
-      </div>
-
-      <textarea class="form-control" rows="10" placeholder="Описание проблемы" name="message" required></textarea>
-      
-      <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
-        <div class="alt-send-button">
-          <i class="fa fa-paper-plane"></i><span class="send-text">ОТПРАВИТЬ</span>
-        </div>
-      
-      </button>
-      
-    </form>
 
      <footer class="footer">
         <div class="container">
@@ -94,7 +93,7 @@
     e.target.elements.email.value = '';
     e.target.elements.message.value = '';
   });
-
+//  vejlve
 </script>
 </body>
 </html>
